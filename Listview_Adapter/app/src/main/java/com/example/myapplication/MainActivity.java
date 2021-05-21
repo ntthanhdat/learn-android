@@ -14,26 +14,24 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-ArrayList<String> mang =new ArrayList<>();
+    ListView lvCountry;
+ArrayList<Country> countryArr =new ArrayList<>();
+CountryAdapter countryAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ListView listView = (ListView)findViewById(R.id.listView);
-
-
-        mang.add("nguyen the thanh dat");
-        mang.add("nguyen thi thu trang");
-        mang.add("pecua2002");
-        mang.add("nuke handa");
-        mang.add("kem que");
-
-
-        ArrayAdapter<String> arrayAdapter
-                = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, mang);
-
-        listView.setAdapter(arrayAdapter);
+        Reference();
+        countryAdapter=new CountryAdapter(this, R.layout.onecountry,countryArr);
+        lvCountry.setAdapter(countryAdapter);
+    }
+    private void Reference(){
+        lvCountry = (ListView)findViewById(R.id.listView);
+        countryArr=new ArrayList<>();
+        countryArr.add(new Country("Afghanistan",  R.drawable.afg, "38.040M"));
+        countryArr.add(new Country("Albania",  R.drawable.albania, "28.62M"));
+        countryArr.add(new Country("Algeria",  R.drawable.algen, "44.7M"));
     }
 
 

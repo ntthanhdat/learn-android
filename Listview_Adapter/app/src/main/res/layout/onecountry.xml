@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/countryimage"
+    android:layout_width="120dp"
+    android:layout_height="120dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/countryimage"
+        android:id="@+id/countryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên"/>
+
+    <TextView
+
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/countryimage"
+        android:layout_below="@+id/countryname"
+        android:id="@+id/countrypop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mô tả"/>
+</RelativeLayout>
