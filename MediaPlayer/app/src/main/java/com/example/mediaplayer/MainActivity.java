@@ -43,8 +43,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         tx1 = (TextView)findViewById(R.id.textView2);
         tx2 = (TextView)findViewById(R.id.textView3);
         tx3 = (TextView)findViewById(R.id.textView4);
-        tx3.setText("muonroima.mp3");
-        mediaPlayer=MediaPlayer.create(this,R.raw.muonroima);
+        tx3.setText("nonomura.mp4");
+        mediaPlayer=MediaPlayer.create(this,R.raw.nonomura);
         seekbar = (SeekBar)findViewById(R.id.seekBar);
         seekbar.setClickable(false);
         b2.setEnabled(false);
