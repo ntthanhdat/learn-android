@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/lvimage"
+        android:layout_width="121dp"
+        android:layout_height="144dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/lvimage"
+        android:id="@+id/lvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên"/>
+
+    <TextView
+
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/lvimage"
+        android:layout_below="@+id/lvname"
+        android:id="@+id/lvphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone number"/>
+
+    <TextView
+        android:id="@+id/lvemail"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/lvimage"
+        android:layout_below="@+id/lvphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email" />
+</RelativeLayout>
